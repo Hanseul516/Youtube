@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>Youtube Mobile</title>
+    <script
+      src="https://kit.fontawesome.com/2d323a629b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <div class="logo">
+        <i class="fab fab fa-youtube"></i>
+        <span class="title">Youtube</span>
+      </div>
+      <div class="icons">
+        <i class="fas fa-search"></i>
+        <i class="fas fas fa-ellipsis-v"></i>
+      </div>
+    </header>
+
+    <!-- Video player -->
+    <section class="player">
+      <video src="./video/video1.mp4" autoplay controls></video>
+    </section>
+
+    <div class="infoAndUpNext">
+        <!-- video info -->
+        <section>
+      <section class="info">
+        <!-- Metadata -->
+        <div class="metadata">
+          <ul class="hashtags">
+            <li>#Choi</li>
+            <li>#Han</li>
+            <li>#seul</li>
+          </ul>
+          <div class="titleAndButton">
+            <span class="title">
+              Clone Coding: Youtube Mobile 유튜브 모바일 웹사이트 따라하기 |
+              HTML/CSS/JS 12233445565789908089
+            </span>
+            <button class="moreBtn">
+              <i class="fas fa-caret-down"></i>
+            </button>
+          </div>
+          <span class="views">조회수 516만회 1년 전</span>
+        </div>
+        <!-- Actions -->
+        <ul class="actions">
+          <li>
+            <button>
+              <i class="fas fa-thumbs-up"></i><span>1K</span>
+            </button>
+          </li>
+          <li>
+            <button><i class="fas fa-thumbs-down"></i><span>0</span></button>
+          </li>
+          <li>
+            <button><i class="fas fa-share"></i><span>Share</span></button>
+          </li>
+          <li>
+            <button><i class="fas fa-plus"></i><span>Save</span></button>
+          </li>
+          <li>
+            <button>
+              <i class="fab fa-font-awesome-flag"></i><span>Report</span>
+            </button>
+          </li>
+        </ul>
+        <!-- Channel Description -->
+        <div class="channel">
+          <div class="metadata">
+            <img src="./image/icon.png" alt="" />
+            <div class="info">
+              <span class="name">Duseul두슬</span>
+              <span class="subscribers">구독자 5.16천명</span>
+            </div>
+          </div>
+          <button class="subscribe">구독</button>
+        </div>
+      </section>
+
+      <div class="comment">
+        <div class="comment+">
+            <span class="num">댓글 203개<span>
+            <button class="criteria">정렬 기준</button>
+            <div class="text">
+            <img src="./image/icon.png" alt="">
+            <span><textarea class="textarea"name="" id="comment" cols="100" rows="1" placeholder="댓글 추가..." focus></textarea></span>
+            </div>
+            <div class="twoBtn">
+            <button class="delete">취소</button>
+            <button class="ok">댓글</button>
+          </div>
+        </div>
+        <!--
+        <div class="afterCmt">
+            <img src="./image/icon.png" alt="" />
+            <div class="memo">
+              <span class="name">Duseul두슬</span>
+              <span class="time">1년 전</span>
+              <span class="cmt">자바 백에서 뷰 프론트로 전직했는데 너무 좋네요. 개발 환경이 좋은것도 있지만 직장 분위기가 은행에서 슈트 쫙 달라붙게 입고 개발하던 분위기에서 집에서 재택근무 하는걸로 바뀐게 가장 좋은것 같습니다. 자바 백은 진짜 재택 찾기 버거웠는데 여기는 할줄만 안다니깐 그냥 집에서 일하라고 함.</span>
+              <button><i class="fas fa-thumbs-up"></i></button><span>60</span>
+              <button><i class="fas fa-thumbs-down"></i></button>
+              <button><span>답글</span></button>
+              <button class="moreButn"><i class="fas fa-ellipsis-v"></i></button>
+              </div>-->
+            </div>
+          </section>
+
+
+
+
+
+
+
+
+      <!-- Up next -->
+      <section class="UpNext">
+        <span class="title">Up next</span>
+        <ul>
+          <li class="item">
+            <div class="img"><img src="./image/nursing1.jpg" alt="" /></div>
+            <div class="info">
+              <span class="title"
+                >[CaseStudy]출혈위험성(Risk for Bleeding) |
+                NANDA정의,간호진단,관련요인,간호목표,주관적자료,간호중재</span
+              >
+              <span class="name">Duseul두슬</span>
+              <span class="views">51K views</span>
+            </div>
+            <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+          </li>
+          <li class="item">
+            <div class="img"><img src="./image/nursing2.jpg" alt="" /></div>
+            <div class="info">
+              <span class="title"
+                >[질병기술]만성 폐쇄성 폐질환(COPD) |
+                질병기술/문헌고찰,원인,병태생리,증상,합병증,증상,간호</span
+              >
+              <span class="name">Duseul두슬</span>
+              <span class="views">60K views</span>
+            </div>
+            <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+          </li>
+          <li class="item">
+            <div class="img"><img src="./image/nursing3.jpg" alt="" /></div>
+            <div class="info">
+              <span class="title"
+                >[여성간호학]정상임신간호 핵심요약정리 | 임신징후,
+                증상,임신간호중재,산전관리</span
+              >
+              <span class="name">Duseul두슬</span>
+              <span class="views">13K views</span>
+            </div>
+            <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </body>
+</html>

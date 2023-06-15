@@ -1,0 +1,300 @@
+:root {
+  /* Color*/
+  --white-color: #fff;
+  --black-color: #140a00;
+  --blue-color: #045fd4;
+  --red-color: #ff0000;
+  --grey-light-color: #e0e0e0;
+  --grey-dark-color: #909090;
+  /* size */
+  --padding: 12px;
+  --avatar-size: 36px;
+  /* font size */
+  --font-large: 18px;
+  --font-medium: 14px;
+  --font-small: 12px;
+  --font-micro: 10px;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Roboto;
+}
+ul {
+  list-style: none;
+}
+button,
+button:focus {
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+/* header */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--padding);
+  background-color: var(--black-color);
+  color: var(--white-color);
+}
+header .logo {
+  font-size: var(--font-large);
+}
+header .logo i {
+  color: var(--red-color);
+}
+header .icons .fa-search {
+  margin-right: var(--padding);
+}
+/* video player*/
+.player {
+  /*position: sticky;  /*스크롤해도 위에 붙어있게 top 위에
+    top: 0;   */
+  text-align: center;
+  background-color: var(--black-color);
+}
+.player video {
+  width: 100%;
+  height: 100%;
+  max-width: 1000px;
+}
+body > .info {
+  padding: var(--padding);
+  font-size: var(--font-small);
+}
+.info .metadata .hashtags {
+  display: flex;
+  font-size: var(--font-small);
+  color: var(--blue-color);
+}
+.info .metadata .hashtags li {
+  margin-left: var(--padding);
+  margin-top: 8px;
+  cursor: pointer;
+}
+.info .metadata .titleAndButton {
+  display: flex;
+}
+.info .metadata .titleAndButton .title {
+  font-size: var(--font-large);
+  display: -webkit-box; /* 구글링. -webkit-line-clamp */
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2; /* 제목을 2줄로 제한 */
+  overflow: hidden;
+  margin-left: var(--padding);
+}
+.info .metadata .titleAndButton .moreBtn {
+  height: 100%;
+  margin-right: var(--padding);
+  background-color: transparent;
+}
+.info .metadata .views {
+  font-size: var(--font-small);
+  color: var(--grey-dark-color);
+  margin-left: var(--padding);
+}
+
+/* action buttons */
+.info .actions {
+  display: flex;
+  justify-content: space-around; /* 죄우로 전체 간격맞추고 사이간격도 맞춤*/
+  margin: var(--padding) 0;
+}
+.info .actions button {
+  display: flex;
+  flex-direction: column; /* 세로로 정렬 아이콘이 위로 텍스트가 아래로*/
+  font-size: var(--font-small);
+  color: var(--grey-dark-color);
+  background-color: transparent;
+}
+
+.info .actions button i {
+  margin: 0px auto; /* ㅎㅎ배운거다!! */
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+.info .actions button:hover {
+  color: var(--blue-color);
+}
+
+/* channel description */
+.info .channel {
+  display: flex;
+  justify-content: space-between; /*서로 양옆으로 떨어지게 됨*/
+  border-top: 1px solid var(--grey-light-color);
+  border-bottom: 1px solid var(--grey-light-color);
+}
+
+.info .channel .metadata {
+  display: flex;
+  align-items: center;
+  margin: var(--padding);
+}
+.info .channel .metadata img {
+  width: var(--avatar-size);
+  height: var(--avatar-size);
+  border-radius: 50%;
+  margin-right: var(--padding);
+  cursor: pointer;
+}
+.info .channel .metadata .info {
+  display: flex;
+  flex-direction: column;
+}
+.info .channel .metadata .info .name {
+  font-size: var(--font-medium);
+}
+.info .channel .metadata .info .subscribers {
+  font-size: var(--font-small);
+  color: var(--grey-dark-color);
+}
+.info .channel .subscribe {
+  color: var(--white-color);
+  font-size: var(--font-medium);
+  background-color: var(--grey-dark-color);
+  margin-top: 15px;
+  margin-right: 20px;
+  width: 45px;
+  height: 30px;
+  border-radius: 20px 20px 20px 20px;
+}
+.info .channel .subscribe:hover {
+  background-color: var(--black-color);
+  border-radius: 20px 20px 20px 20px;
+  color: var(--white-color);
+}
+
+/* Up next */
+.UpNext {
+  padding: 8px var(--padding);
+}
+.UpNext > .title {
+  font-size: var(--font-medium);
+  color: var(--grey-dark-color);
+  margin-bottom: 8px;
+}
+.UpNext .item {
+  display: flex;
+  margin-top: var(--padding);
+  cursor: pointer;
+}
+.UpNext .item .img {
+  flex: 1 1 35%;
+  margin-right: var(--padding);
+}
+.UpNext .item .img img {
+  width: 100%;
+}
+.UpNext .item .info {
+  flex: 1 1 60%;
+  display: flex;
+  flex-direction: column;
+}
+.UpNext .item .moreBtn {
+  flex: 1 1 5%;
+  background-color: transparent;
+}
+.UpNext .item .info .title {
+  font-size: var(--font-medium);
+}
+.UpNext .item .info .name {
+  font-size: var(--font-small);
+  color: var(--grey-dark-color);
+}
+.UpNext .item .info .views {
+  font-size: var(--font-micro);
+  color: var(--grey-dark-color);
+}
+
+.infoAndUpNext {
+  display: flex;
+  flex-direction: column;
+}
+.infoAndUpNext.UpNext {
+  width: 20%;
+}
+
+@media screen and (min-width: 768px) {
+  /* 화면이 768px 이상일때 {} 안의 내용이 적용됨 */
+  .infoAndUpNext {
+    flex-direction: row; /* 회면이 크면 수평으로 정렬 */
+  }
+  .UpNext {
+    width: 50%;
+  }
+}
+
+.info .channel {
+  display: flex;
+  justify-content: space-between; /*서로 양옆으로 떨어지게 됨*/
+  border-top: 1px solid var(--grey-light-color);
+  border-bottom: 1px solid var(--grey-light-color);
+}
+
+.info .channel .metadata {
+  display: flex;
+  align-items: center;
+  margin: var(--padding);
+}
+
+.comment img {
+  width: var(--avatar-size);
+  height: var(--avatar-size);
+  border-radius: 50%;
+  margin-right: var(--padding);
+  cursor: pointer;
+  margin-left: 10px;
+}
+.comment .num {
+  font-size: var(--font-medium);
+  margin: var(--padding);
+  margin-left: 15px;
+}
+.comment .criteria {
+  margin: var(--padding);
+  background-color: transparent;
+  font-size: var(--font-medium);
+}
+.comment .text {
+  display: flex;
+  justify-content: space-between;
+}
+.comment .textarea {
+  border: none;
+  border-bottom: 1px solid;
+  width: 95%;
+  margin-top: 10px;
+}
+.comment .textarea:hover {
+  border-bottom: 2.3px solid;
+}
+.comment .twoBtn {
+  display: flex;
+  justify-content: right;
+  margin-bottom: 5px;
+  margin-right: 30px;
+}
+.comment .twoBtn .delete {
+  font-size: var(--font-medium);
+  margin-right: 10px;
+  background-color: transparent;
+  width: 40px;
+  height: 30px;
+}
+.comment .twoBtn .ok {
+  font-size: var(--font-medium);
+  margin-right: 10px;
+  background-color: transparent;
+  width: 45px;
+  height: 30px;
+}
+.comment .twoBtn .delete:hover,
+.comment .twoBtn .ok:hover {
+  background-color: var(--blue-color);
+  border-radius: 20px 20px 20px 20px;
+  color: var(--white-color);
+}
